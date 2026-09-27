@@ -24,10 +24,14 @@ def fetch_and_store_batch():
     """
     Extrae un fragmento del batch actual desde la Data API y lo almacena en PostgreSQL.
     """
-    api_url = "http://10.43.97.110:8080/data"
+    #api_url = "http://10.43.97.110:8080/data"
     
     print(f"Solicitando datos a: {api_url}")
-    response = requests.get(api_url)
+    response = requests.get(
+    "http://10.43.97.107:8025/data",
+    params={"group_number": 3},
+    timeout=60,
+)
     response.raise_for_status()
 
     # Parsear los datos obtenidos de la API

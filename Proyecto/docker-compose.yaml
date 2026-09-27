@@ -14,8 +14,8 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
 
   volumes:
-    - ./dags:/opt/airflow/dags
-    - ./plugins:/opt/airflow/plugins
+    - ./Airflow/dags:/opt/airflow/dags
+    - ./Airflow/plugins:/opt/airflow/plugins
     - airflow_logs:/opt/airflow/logs
 
   depends_on:
