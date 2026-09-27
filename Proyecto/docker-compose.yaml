@@ -73,7 +73,7 @@ services:
     command: webserver
 
     ports:
-      - "0.0.0.0:8080:8080"
+      - "0.0.0.0:8030:8080"
 
     healthcheck:
       test:
