@@ -202,7 +202,22 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+  jupyter:
+    build:
+      context: ./Jupyter
+      dockerfile: Dockerfile.jupyter
 
+    ports:
+      - "0.0.0.0:8020:8020"
+
+    volumes:
+      - ./Jupyter:/app
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_started
   airflow-init:
     <<: *airflow-common
     entrypoint: /bin/bash

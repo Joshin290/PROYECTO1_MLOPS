@@ -14709,3 +14709,206 @@
 [2026-09-27T23:32:28.352+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:32:28.352+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2026-09-27T23:32:28.418+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:32:28.417+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:26:28.416525+00:00, run_after=2026-09-27T23:32:28.416525+00:00
 [2026-09-27T23:32:28.481+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.361 seconds
+[2026-09-27T23:32:58.794+0000] {processor.py:156} INFO - Started process (PID=1515) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:32:58.804+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:32:58.806+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:32:58.806+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:32:58.978+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:32:59.036+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:32:59.035+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:32:59.086+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:32:59.085+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:26:59.085286+00:00, run_after=2026-09-27T23:32:59.085286+00:00
+[2026-09-27T23:32:59.132+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.349 seconds
+[2026-09-27T23:33:29.430+0000] {processor.py:156} INFO - Started process (PID=1523) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:33:29.439+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:33:29.441+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:33:29.440+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:33:29.588+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:33:29.674+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:33:29.674+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:33:29.738+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:33:29.737+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:27:29.737405+00:00, run_after=2026-09-27T23:33:29.737405+00:00
+[2026-09-27T23:33:29.795+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.377 seconds
+[2026-09-27T23:34:00.119+0000] {processor.py:156} INFO - Started process (PID=1531) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:34:00.123+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:34:00.125+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:34:00.125+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:34:00.249+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:34:00.316+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:34:00.315+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:34:00.372+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:34:00.372+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:28:00.371368+00:00, run_after=2026-09-27T23:34:00.371368+00:00
+[2026-09-27T23:34:00.420+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.311 seconds
+[2026-09-27T23:34:30.722+0000] {processor.py:156} INFO - Started process (PID=1540) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:34:30.727+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:34:30.729+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:34:30.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:34:30.857+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:34:30.946+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:34:30.946+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:34:31.023+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:34:31.022+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:28:31.022088+00:00, run_after=2026-09-27T23:34:31.022088+00:00
+[2026-09-27T23:34:31.056+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.345 seconds
+[2026-09-27T23:35:01.342+0000] {processor.py:156} INFO - Started process (PID=1549) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:35:01.346+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:35:01.348+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:35:01.348+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:35:01.482+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:35:01.525+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:35:01.525+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:35:01.586+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:35:01.585+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:29:01.584717+00:00, run_after=2026-09-27T23:35:01.584717+00:00
+[2026-09-27T23:35:01.647+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.318 seconds
+[2026-09-27T23:35:31.981+0000] {processor.py:156} INFO - Started process (PID=1557) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:35:31.984+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:35:31.986+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:35:31.986+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:35:32.114+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:35:32.154+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:35:32.154+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:35:32.212+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:35:32.211+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:29:32.211063+00:00, run_after=2026-09-27T23:35:32.211063+00:00
+[2026-09-27T23:35:32.278+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.309 seconds
+[2026-09-27T23:36:02.582+0000] {processor.py:156} INFO - Started process (PID=1565) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:36:02.612+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:36:02.615+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:36:02.614+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:36:02.807+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:36:02.885+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:36:02.885+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:36:02.950+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:36:02.949+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:30:02.949421+00:00, run_after=2026-09-27T23:36:02.949421+00:00
+[2026-09-27T23:36:03.006+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.435 seconds
+[2026-09-27T23:36:33.347+0000] {processor.py:156} INFO - Started process (PID=1573) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:36:33.351+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:36:33.352+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:36:33.352+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:36:33.476+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:36:33.542+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:36:33.541+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:36:33.597+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:36:33.596+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:30:33.596149+00:00, run_after=2026-09-27T23:36:33.596149+00:00
+[2026-09-27T23:36:33.650+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.314 seconds
+[2026-09-27T23:37:03.938+0000] {processor.py:156} INFO - Started process (PID=1581) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:37:03.943+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:37:03.945+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:37:03.945+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:37:04.087+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:37:04.167+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:37:04.166+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:37:04.246+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:37:04.246+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:31:04.245466+00:00, run_after=2026-09-27T23:37:04.245466+00:00
+[2026-09-27T23:37:04.311+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.385 seconds
+[2026-09-27T23:37:34.636+0000] {processor.py:156} INFO - Started process (PID=1590) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:37:34.640+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:37:34.642+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:37:34.642+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:37:34.818+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:37:34.898+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:37:34.898+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:37:34.961+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:37:34.960+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:31:34.960304+00:00, run_after=2026-09-27T23:37:34.960304+00:00
+[2026-09-27T23:37:35.007+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.384 seconds
+[2026-09-27T23:38:05.291+0000] {processor.py:156} INFO - Started process (PID=1598) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:38:05.295+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:38:05.297+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:38:05.297+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:38:05.419+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:38:05.497+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:38:05.497+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:38:05.577+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:38:05.577+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:32:05.576434+00:00, run_after=2026-09-27T23:38:05.576434+00:00
+[2026-09-27T23:38:05.638+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.361 seconds
+[2026-09-27T23:38:35.942+0000] {processor.py:156} INFO - Started process (PID=1606) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:38:35.946+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:38:35.948+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:38:35.948+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:38:36.113+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:38:36.196+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:38:36.196+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:38:36.276+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:38:36.276+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:32:36.274901+00:00, run_after=2026-09-27T23:38:36.274901+00:00
+[2026-09-27T23:38:36.334+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.405 seconds
+[2026-09-27T23:39:06.633+0000] {processor.py:156} INFO - Started process (PID=1614) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:06.636+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:39:06.637+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:06.636+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:06.760+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:06.840+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:06.840+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:39:06.904+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:06.901+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:33:06.901008+00:00, run_after=2026-09-27T23:39:06.901008+00:00
+[2026-09-27T23:39:06.980+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.352 seconds
+[2026-09-27T23:39:11.088+0000] {processor.py:156} INFO - Started process (PID=1615) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:11.090+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:39:11.092+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:11.091+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:11.217+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:11.304+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:11.304+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:39:11.367+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:11.366+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:33:11.365880+00:00, run_after=2026-09-27T23:39:11.365880+00:00
+[2026-09-27T23:39:11.439+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.366 seconds
+[2026-09-27T23:39:41.740+0000] {processor.py:156} INFO - Started process (PID=1624) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:41.744+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:39:41.746+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:41.745+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:41.911+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:39:42.001+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:42.001+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:39:42.069+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:39:42.069+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:33:42.068459+00:00, run_after=2026-09-27T23:39:42.068459+00:00
+[2026-09-27T23:39:42.123+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.394 seconds
+[2026-09-27T23:40:12.423+0000] {processor.py:156} INFO - Started process (PID=1632) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:40:12.426+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:40:12.428+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:40:12.428+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:40:12.569+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:40:12.629+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:40:12.628+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:40:12.691+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:40:12.690+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:34:12.690215+00:00, run_after=2026-09-27T23:40:12.690215+00:00
+[2026-09-27T23:40:12.762+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.350 seconds
+[2026-09-27T23:40:43.080+0000] {processor.py:156} INFO - Started process (PID=1640) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:40:43.085+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:40:43.087+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:40:43.087+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:40:43.262+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:40:43.334+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:40:43.334+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:40:43.407+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:40:43.406+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:34:43.405799+00:00, run_after=2026-09-27T23:40:43.405799+00:00
+[2026-09-27T23:40:43.472+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.404 seconds
+[2026-09-27T23:41:13.789+0000] {processor.py:156} INFO - Started process (PID=1648) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:41:13.800+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:41:13.802+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:41:13.802+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:41:13.942+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:41:14.005+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:41:14.004+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:41:14.077+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:41:14.076+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:35:14.075809+00:00, run_after=2026-09-27T23:41:14.075809+00:00
+[2026-09-27T23:41:14.143+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.377 seconds
+[2026-09-27T23:41:44.448+0000] {processor.py:156} INFO - Started process (PID=1656) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:41:44.451+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:41:44.453+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:41:44.453+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:41:44.649+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:41:44.739+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:41:44.739+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:41:44.809+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:41:44.809+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:35:44.808529+00:00, run_after=2026-09-27T23:41:44.808529+00:00
+[2026-09-27T23:41:44.869+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.434 seconds
+[2026-09-27T23:42:15.165+0000] {processor.py:156} INFO - Started process (PID=1664) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:42:15.168+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:42:15.169+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:42:15.169+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:42:15.315+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:42:15.398+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:42:15.398+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:42:15.465+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:42:15.464+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:36:15.463835+00:00, run_after=2026-09-27T23:42:15.463835+00:00
+[2026-09-27T23:42:15.531+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.372 seconds
+[2026-09-27T23:42:45.863+0000] {processor.py:156} INFO - Started process (PID=1671) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:42:45.867+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:42:45.869+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:42:45.869+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:42:46.039+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:42:46.110+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:42:46.109+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:42:46.174+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:42:46.173+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:36:46.173351+00:00, run_after=2026-09-27T23:42:46.173351+00:00
+[2026-09-27T23:42:46.234+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.384 seconds
+[2026-09-27T23:43:16.551+0000] {processor.py:156} INFO - Started process (PID=1678) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:43:16.557+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:43:16.559+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:43:16.559+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:43:16.728+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:43:16.820+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:43:16.820+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:43:16.889+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:43:16.888+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:37:16.888347+00:00, run_after=2026-09-27T23:43:16.888347+00:00
+[2026-09-27T23:43:16.936+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.396 seconds
+[2026-09-27T23:43:47.234+0000] {processor.py:156} INFO - Started process (PID=1687) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:43:47.238+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:43:47.240+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:43:47.240+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:43:47.385+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:43:47.493+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:43:47.492+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:43:47.568+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:43:47.567+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:37:47.566897+00:00, run_after=2026-09-27T23:43:47.566897+00:00
+[2026-09-27T23:43:47.629+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.408 seconds
+[2026-09-27T23:44:17.945+0000] {processor.py:156} INFO - Started process (PID=1695) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:44:17.949+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:44:17.951+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:44:17.950+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:44:18.089+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:44:18.192+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:44:18.192+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:44:18.269+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:44:18.268+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:38:18.268000+00:00, run_after=2026-09-27T23:44:18.268000+00:00
+[2026-09-27T23:44:18.323+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.390 seconds
+[2026-09-27T23:44:48.635+0000] {processor.py:156} INFO - Started process (PID=1703) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:44:48.638+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:44:48.639+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:44:48.639+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:44:48.750+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:44:48.827+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:44:48.827+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:44:48.889+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:44:48.889+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:38:48.888461+00:00, run_after=2026-09-27T23:44:48.888461+00:00
+[2026-09-27T23:44:48.958+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.332 seconds
+[2026-09-27T23:45:19.267+0000] {processor.py:156} INFO - Started process (PID=1711) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:45:19.271+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:45:19.272+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:45:19.272+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:45:19.405+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:45:19.481+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:45:19.481+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:45:19.553+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:45:19.552+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:39:19.551697+00:00, run_after=2026-09-27T23:45:19.551697+00:00
+[2026-09-27T23:45:19.610+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.354 seconds
+[2026-09-27T23:45:49.927+0000] {processor.py:156} INFO - Started process (PID=1719) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:45:49.930+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:45:49.932+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:45:49.932+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:45:50.060+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:45:50.115+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:45:50.115+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:45:50.157+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:45:50.157+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:39:50.156574+00:00, run_after=2026-09-27T23:45:50.156574+00:00
+[2026-09-27T23:45:50.203+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.287 seconds
+[2026-09-27T23:46:20.495+0000] {processor.py:156} INFO - Started process (PID=1728) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:46:20.498+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:46:20.501+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:46:20.500+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:46:20.671+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:46:20.744+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:46:20.743+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:46:20.817+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:46:20.816+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:40:20.815810+00:00, run_after=2026-09-27T23:46:20.815810+00:00
+[2026-09-27T23:46:20.865+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.382 seconds
+[2026-09-27T23:46:51.155+0000] {processor.py:156} INFO - Started process (PID=1736) to work on /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:46:51.158+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/1_dag_flujo.py for tasks to queue
+[2026-09-27T23:46:51.160+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:46:51.159+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:46:51.310+0000] {processor.py:809} INFO - DAG(s) dict_keys(['cobertura_pipeline']) retrieved from /opt/airflow/dags/1_dag_flujo.py
+[2026-09-27T23:46:51.400+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:46:51.399+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2026-09-27T23:46:51.486+0000] {logging_mixin.py:149} INFO - [2026-09-27T23:46:51.486+0000] {dag.py:3490} INFO - Setting next_dagrun for cobertura_pipeline to 2026-09-27T23:40:51.485823+00:00, run_after=2026-09-27T23:46:51.485823+00:00
+[2026-09-27T23:46:51.515+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/1_dag_flujo.py took 0.371 seconds
