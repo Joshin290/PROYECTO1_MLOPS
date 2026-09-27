@@ -1,0 +1,19 @@
+[2026-09-27T22:46:58.085+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cobertura_pipeline.entrenar_y_evaluar scheduled__2026-09-27T22:40:40.333823+00:00 [queued]>
+[2026-09-27T22:46:58.119+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cobertura_pipeline.entrenar_y_evaluar scheduled__2026-09-27T22:40:40.333823+00:00 [queued]>
+[2026-09-27T22:46:58.120+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 3
+[2026-09-27T22:46:58.159+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): entrenar_y_evaluar> on 2026-09-27 22:40:40.333823+00:00
+[2026-09-27T22:46:58.179+0000] {standard_task_runner.py:57} INFO - Started process 1024 to run task
+[2026-09-27T22:46:58.194+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'cobertura_pipeline', 'entrenar_y_evaluar', 'scheduled__2026-09-27T22:40:40.333823+00:00', '--job-id', '1333', '--raw', '--subdir', 'DAGS_FOLDER/1_dag_flujo.py', '--cfg-path', '/tmp/tmpq7udctq0']
+[2026-09-27T22:46:58.203+0000] {standard_task_runner.py:85} INFO - Job 1333: Subtask entrenar_y_evaluar
+[2026-09-27T22:46:58.363+0000] {task_command.py:410} INFO - Running <TaskInstance: cobertura_pipeline.entrenar_y_evaluar scheduled__2026-09-27T22:40:40.333823+00:00 [running]> on host 7fe9872be1d6
+[2026-09-27T22:46:58.633+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cobertura_pipeline' AIRFLOW_CTX_TASK_ID='entrenar_y_evaluar' AIRFLOW_CTX_EXECUTION_DATE='2026-09-27T22:40:40.333823+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-09-27T22:40:40.333823+00:00'
+[2026-09-27T22:46:58.638+0000] {crypto.py:83} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-09-27T22:46:58.639+0000] {base.py:73} INFO - Using connection ID 'postgres_cobertura' for task execution.
+[2026-09-27T22:47:01.305+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/sklearn/ensemble/_base.py:194: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+  n_jobs = min(effective_n_jobs(n_jobs), n_estimators)
+
+[2026-09-27T22:47:02.106+0000] {1_dag_flujo.py:203} INFO - Métricas: {"accuracy": 0.9848812095032398, "f1_macro": 0.9492974131396104, "filas_train": 14641, "filas_test": 3704, "batches_recolectados": 8, "clases_entrenadas": [1, 2, 4, 5, 6], "clases_test": [1, 2, 4, 5, 6], "matriz_confusion_orden_1_a_7": [[3175, 0, 0, 10, 5, 2, 0], [6, 125, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [15, 0, 0, 139, 1, 0, 0], [14, 0, 0, 0, 75, 0, 0], [3, 0, 0, 0, 0, 134, 0], [0, 0, 0, 0, 0, 0, 0]]}
+[2026-09-27T22:47:02.124+0000] {python.py:183} INFO - Done. Returned value was: None
+[2026-09-27T22:47:02.153+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=cobertura_pipeline, task_id=entrenar_y_evaluar, execution_date=20260927T224040, start_date=20260927T224658, end_date=20260927T224702
+[2026-09-27T22:47:02.223+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2026-09-27T22:47:02.301+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

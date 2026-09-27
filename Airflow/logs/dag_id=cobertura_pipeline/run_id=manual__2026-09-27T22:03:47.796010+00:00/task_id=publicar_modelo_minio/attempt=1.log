@@ -1,0 +1,16 @@
+[2026-09-27T22:04:12.769+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cobertura_pipeline.publicar_modelo_minio manual__2026-09-27T22:03:47.796010+00:00 [queued]>
+[2026-09-27T22:04:12.801+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cobertura_pipeline.publicar_modelo_minio manual__2026-09-27T22:03:47.796010+00:00 [queued]>
+[2026-09-27T22:04:12.802+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 3
+[2026-09-27T22:04:12.843+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): publicar_modelo_minio> on 2026-09-27 22:03:47.796010+00:00
+[2026-09-27T22:04:12.860+0000] {standard_task_runner.py:57} INFO - Started process 113 to run task
+[2026-09-27T22:04:12.873+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'cobertura_pipeline', 'publicar_modelo_minio', 'manual__2026-09-27T22:03:47.796010+00:00', '--job-id', '1294', '--raw', '--subdir', 'DAGS_FOLDER/1_dag_flujo.py', '--cfg-path', '/tmp/tmptp7__ptc']
+[2026-09-27T22:04:12.879+0000] {standard_task_runner.py:85} INFO - Job 1294: Subtask publicar_modelo_minio
+[2026-09-27T22:04:13.030+0000] {task_command.py:410} INFO - Running <TaskInstance: cobertura_pipeline.publicar_modelo_minio manual__2026-09-27T22:03:47.796010+00:00 [running]> on host 7fe9872be1d6
+[2026-09-27T22:04:13.299+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cobertura_pipeline' AIRFLOW_CTX_TASK_ID='publicar_modelo_minio' AIRFLOW_CTX_EXECUTION_DATE='2026-09-27T22:03:47.796010+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-27T22:03:47.796010+00:00'
+[2026-09-27T22:04:13.649+0000] {crypto.py:83} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-09-27T22:04:13.651+0000] {base.py:73} INFO - Using connection ID 'postgres_cobertura' for task execution.
+[2026-09-27T22:04:13.668+0000] {1_dag_flujo.py:227} INFO - Publicado en MinIO: grupo3/2ce4afc23897e5e671681103/modelo.joblib
+[2026-09-27T22:04:13.669+0000] {python.py:183} INFO - Done. Returned value was: None
+[2026-09-27T22:04:13.705+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=cobertura_pipeline, task_id=publicar_modelo_minio, execution_date=20260927T220347, start_date=20260927T220412, end_date=20260927T220413
+[2026-09-27T22:04:13.763+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2026-09-27T22:04:13.829+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

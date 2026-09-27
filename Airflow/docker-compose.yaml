@@ -26,7 +26,7 @@ x-airflow-common:
     MINIO_BUCKET: "modelos"
     MINIO_SECURE: "false"
     AIRFLOW_VAR_GRUPO_PROYECTO: "3"
-    AIRFLOW_VAR_API_DATOS_URL: "http://10.43.97.107:8025"
+    AIRFLOW_VAR_API_DATOS_URL: "http://10.43.97.110:8080"
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}

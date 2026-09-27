@@ -1,0 +1,24 @@
+[2026-09-27T22:58:46.145+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cobertura_pipeline.recolectar_api scheduled__2026-09-27T22:52:40.333823+00:00 [queued]>
+[2026-09-27T22:58:46.177+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cobertura_pipeline.recolectar_api scheduled__2026-09-27T22:52:40.333823+00:00 [queued]>
+[2026-09-27T22:58:46.178+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2026-09-27T22:58:46.219+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): recolectar_api> on 2026-09-27 22:52:40.333823+00:00
+[2026-09-27T22:58:46.237+0000] {standard_task_runner.py:57} INFO - Started process 1239 to run task
+[2026-09-27T22:58:46.250+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'cobertura_pipeline', 'recolectar_api', 'scheduled__2026-09-27T22:52:40.333823+00:00', '--job-id', '1338', '--raw', '--subdir', 'DAGS_FOLDER/1_dag_flujo.py', '--cfg-path', '/tmp/tmpcnfcwbes']
+[2026-09-27T22:58:46.258+0000] {standard_task_runner.py:85} INFO - Job 1338: Subtask recolectar_api
+[2026-09-27T22:58:46.411+0000] {task_command.py:410} INFO - Running <TaskInstance: cobertura_pipeline.recolectar_api scheduled__2026-09-27T22:52:40.333823+00:00 [running]> on host 7fe9872be1d6
+[2026-09-27T22:58:46.683+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cobertura_pipeline' AIRFLOW_CTX_TASK_ID='recolectar_api' AIRFLOW_CTX_EXECUTION_DATE='2026-09-27T22:52:40.333823+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-09-27T22:52:40.333823+00:00'
+[2026-09-27T22:58:46.688+0000] {crypto.py:83} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-09-27T22:58:46.690+0000] {base.py:73} INFO - Using connection ID 'postgres_cobertura' for task execution.
+[2026-09-27T22:58:46.729+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/1_dag_flujo.py", line 91, in recolectar
+    raise RuntimeError('API HTTP {}: {}'.format(respuesta.status_code, respuesta.text[:500]))
+RuntimeError: API HTTP 400: {"detail":"Ya se recolectó toda la información minima necesaria"}
+[2026-09-27T22:58:46.757+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=cobertura_pipeline, task_id=recolectar_api, execution_date=20260927T225240, start_date=20260927T225846, end_date=20260927T225846
+[2026-09-27T22:58:46.794+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 1338 for task recolectar_api (API HTTP 400: {"detail":"Ya se recolectó toda la información minima necesaria"}; 1239)
+[2026-09-27T22:58:46.829+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2026-09-27T22:58:46.921+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
