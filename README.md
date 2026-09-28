@@ -1,5 +1,11 @@
 # Proyecto
 
+Este repositorio contiene la arquitectura completa de MLOps orientada a la automatización, entrenamiento, almacenamiento y despliegue de modelos de Machine Learning para la predicción de cobertura forestal.
+
+## Origen de los Datos y Fuente Externa
+
+Los datos del sistema son obtenidos a través de una API externa expuesta en la máquina virtual del profesor, alojada en la dirección **IP http://10.43.97.110:8080**. Esta API proporciona un conjunto de datos aleatorios que cambian cada 5 minutos, los cuales son recolectados de manera automatizada mediante flujos en **Apache Airflow** para alimentar el entrenamiento de los modelos de inteligencia artificial.
+
 ## Servicios Implementados
 
 ### Apache Airflow:
@@ -30,7 +36,7 @@ A continuación, se describen los puertos usados en este proyecto:
 | Servicio | Puerto en el Host | Descripción |
 | :--- | :--- | :--- |
 | **Airflow Webserver** | `8080` | 
-| **API de CObertura Forestal** | `8027` | 
+| **API de Cobertura Forestal** | `8027` | 
 | **Jupyter Lab** | `8020` | 
 | **MinIO Console** | `9001` | 
 | **MinIO API** | `9000` | 
@@ -61,3 +67,34 @@ A continuación, se describen los puertos usados en este proyecto:
 Ejecuta el siguiente comando para construir las imágenes personalizadas (como Airflow, Jupyter y la API) y poner en marcha todos los contenedores en segundo plano (detached mode):
 
 **docker compose up --build -d**
+
+## Ejecución de la Canalización (DAG)
+
+Ingresa a la interfaz gráfica de Airflow:
+
+URL: http://localhost:8080
+
+Inicia sesión con las credenciales predeterminadas:
+
+Usuario: airflow
+
+Contraseña: airflow
+
+Dirígete a la pestaña DAGs, busca el flujo correspondiente al proyecto y activa su interruptor para cambiarlo a estado activo.
+
+Haz clic en el botón de reproducción (Trigger DAG) para iniciar una ejecución manual de la ingesta desde la API externa y el procesamiento de los datos.
+
+lujo de Ejecución y Tiempos del Sistema
+
+## secuencia operativa:
+
+1. **Ingesta y Almacenamiento (Airflow):** 
+   - Se debe esperar un tiempo estimado de 30 minutos para que se ejecuten y completen de forma periódica los **10 DAGs** programados en Apache Airflow. 
+   - Estos flujos se encargan de extraer los lotes de datos desde la API externa del profesor (`http://10.43.97.110:8080`) y almacenarlos y estructurarlos de forma persistente en la base de datos de PostgreSQL.
+
+2. **Entrenamiento (Jupyter Lab):**
+   - Una vez finalizada la ingesta masiva en la base de datos, se procede a utilizar el entorno interactivo de Jupyter Lab.
+   - Desde el notebook, se consumen los datos preparados previamente en PostgreSQL, se ejecuta el entrenamiento del modelo de Machine Learning, y el artefacto resultante se empaca y almacena directamente en MinIO.
+
+3. **Inferencia en Tiempo Real (FastAPI):**
+   - Finalmente, el servicio REST expuesto en FastAPI (`http://localhost:8027/docs`) recupera de manera dinámica el modelo entrenado desde MinIO para procesar las peticiones de predicción en tiempo real.
