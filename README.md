@@ -48,7 +48,7 @@ A continuación, se describen los puertos usados en este proyecto:
 | **MinIO Console** | `9001` | 
 | **MinIO API** | `9000` | 
 | **PostgreSQL (Datos)** | `8030` | 
-| **Flower** | `5555` |
+
 
 ## Credenciales
 
