@@ -4,11 +4,11 @@
 
 ### Apache Airflow:
 
-u función es automatizar y orquestar los flujos de trabajo. Opera programando de forma periódica la extracción por lotes (batches) desde la API externa.
+Su función es automatizar y orquestar los flujos de trabajo. Opera programando de forma periódica la extracción por lotes (batches) desde la API externa.
 
 ### PostgreSQL:
 
-u función en el proyecto es servir como el motor de base de datos relacional y dividirse en dos propósitos críticos: por un lado, almacena los metadatos operativos necesarios para el funcionamiento interno de Apache Airflow; y por otro, aloja la base de datos principal, la cual está encargada de almacenar y estructurar de forma persistente los datos extraídos de cada batch en cada una de las ejecuciones individuales de los DAGs.
+Su función en el proyecto es servir como el motor de base de datos relacional y dividirse en dos propósitos críticos: por un lado, almacena los metadatos operativos necesarios para el funcionamiento interno de Apache Airflow; y por otro, aloja la base de datos principal, la cual está encargada de almacenar y estructurar de forma persistente los datos extraídos de cada batch en cada una de las ejecuciones individuales de los DAGs.
 
 ### Jupyter Lab: 
 
@@ -29,7 +29,7 @@ A continuación, se describen los puertos usados en este proyecto:
 
 | Servicio | Puerto en el Host | Descripción |
 | :--- | :--- | :--- |
-| **Airflow Webserver** | `8080` | Interfaz gráfica y monitoreo de pipelines. |
+| **Airflow Webserver** | `8080` | 
 | **API de CObertura Forestal** | `8027` | 
 | **Jupyter Lab** | `8020` | 
 | **MinIO Console** | `9001` | 
