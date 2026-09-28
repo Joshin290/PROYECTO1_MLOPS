@@ -1,5 +1,12 @@
 # Proyecto
 
+## Grupo 3
+
+### Integrantes
+* **Juan David Clavijo Ortiz**
+* **Laura Sofía Rodríguez Pérez**
+* **Joshua Alexander Valero Lozano**
+
 Este repositorio contiene la arquitectura completa de MLOps orientada a la automatización, entrenamiento, almacenamiento y despliegue de modelos de Machine Learning para la predicción de cobertura forestal.
 
 ## Origen de los Datos y Fuente Externa
