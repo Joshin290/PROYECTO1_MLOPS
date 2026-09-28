@@ -1,0 +1,15 @@
+[2026-09-28T01:09:28.873+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cobertura_pipeline.recolectar_api manual__2026-09-28T01:09:16.541802+00:00 [queued]>
+[2026-09-28T01:09:28.904+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cobertura_pipeline.recolectar_api manual__2026-09-28T01:09:16.541802+00:00 [queued]>
+[2026-09-28T01:09:28.904+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2026-09-28T01:09:28.951+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): recolectar_api> on 2026-09-28 01:09:16.541802+00:00
+[2026-09-28T01:09:28.970+0000] {standard_task_runner.py:57} INFO - Started process 107 to run task
+[2026-09-28T01:09:28.982+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'cobertura_pipeline', 'recolectar_api', 'manual__2026-09-28T01:09:16.541802+00:00', '--job-id', '1376', '--raw', '--subdir', 'DAGS_FOLDER/1_dag_flujo.py', '--cfg-path', '/tmp/tmp1ciwfngc']
+[2026-09-28T01:09:28.990+0000] {standard_task_runner.py:85} INFO - Job 1376: Subtask recolectar_api
+[2026-09-28T01:09:29.141+0000] {task_command.py:410} INFO - Running <TaskInstance: cobertura_pipeline.recolectar_api manual__2026-09-28T01:09:16.541802+00:00 [running]> on host 83378675a687
+[2026-09-28T01:09:29.416+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cobertura_pipeline' AIRFLOW_CTX_TASK_ID='recolectar_api' AIRFLOW_CTX_EXECUTION_DATE='2026-09-28T01:09:16.541802+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-28T01:09:16.541802+00:00'
+[2026-09-28T01:09:29.420+0000] {crypto.py:83} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-09-28T01:09:29.422+0000] {base.py:73} INFO - Using connection ID 'postgres_cobertura' for task execution.
+[2026-09-28T01:09:29.436+0000] {taskinstance.py:1454} INFO - Ya hay 10 batches distintos. Pausa el DAG y revisa resultados.
+[2026-09-28T01:09:29.460+0000] {taskinstance.py:1373} INFO - Marking task as SKIPPED. dag_id=cobertura_pipeline, task_id=recolectar_api, execution_date=20260928T010916, start_date=20260928T010928, end_date=20260928T010929
+[2026-09-28T01:09:29.512+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2026-09-28T01:09:29.590+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

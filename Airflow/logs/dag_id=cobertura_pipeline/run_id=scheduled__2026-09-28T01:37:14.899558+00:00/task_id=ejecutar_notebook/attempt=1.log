@@ -1,0 +1,132 @@
+[2026-09-28T01:43:32.515+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cobertura_pipeline.ejecutar_notebook scheduled__2026-09-28T01:37:14.899558+00:00 [queued]>
+[2026-09-28T01:43:32.551+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cobertura_pipeline.ejecutar_notebook scheduled__2026-09-28T01:37:14.899558+00:00 [queued]>
+[2026-09-28T01:43:32.552+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 3
+[2026-09-28T01:43:32.579+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): ejecutar_notebook> on 2026-09-28 01:37:14.899558+00:00
+[2026-09-28T01:43:32.592+0000] {standard_task_runner.py:57} INFO - Started process 1018 to run task
+[2026-09-28T01:43:32.604+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'cobertura_pipeline', 'ejecutar_notebook', 'scheduled__2026-09-28T01:37:14.899558+00:00', '--job-id', '1404', '--raw', '--subdir', 'DAGS_FOLDER/1_dag_flujo.py', '--cfg-path', '/tmp/tmps04vob8q']
+[2026-09-28T01:43:32.611+0000] {standard_task_runner.py:85} INFO - Job 1404: Subtask ejecutar_notebook
+[2026-09-28T01:43:32.775+0000] {task_command.py:410} INFO - Running <TaskInstance: cobertura_pipeline.ejecutar_notebook scheduled__2026-09-28T01:37:14.899558+00:00 [running]> on host 83378675a687
+[2026-09-28T01:43:33.057+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cobertura_pipeline' AIRFLOW_CTX_TASK_ID='ejecutar_notebook' AIRFLOW_CTX_EXECUTION_DATE='2026-09-28T01:37:14.899558+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-09-28T01:37:14.899558+00:00'
+[2026-09-28T01:43:33.496+0000] {execute.py:83} INFO - Input Notebook:  /opt/***/notebooks/entrenamiento.ipynb
+[2026-09-28T01:43:33.496+0000] {execute.py:84} INFO - Output Notebook: /opt/***/logs/notebooks/9ed357236a0f72362b317cad_intento_1.ipynb
+[2026-09-28T01:43:33.496+0000] {execute.py:87} INFO - Working directory: /opt/***
+[2026-09-28T01:43:33.556+0000] {translators.py:196} WARNING - Black is not installed, parameters wont be formatted
+[2026-09-28T01:43:33.586+0000] {logging_mixin.py:149} WARNING - Executing:   0%|          | 0/6 [00:00<?, ?cell/s]
+[2026-09-28T01:43:36.273+0000] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2026-09-28T01:43:36.275+0000] {engines.py:218} INFO - Executing Cell 1---------------------------------------
+[2026-09-28T01:43:36.325+0000] {engines.py:256} INFO - Ending Cell 1------------------------------------------
+[2026-09-28T01:43:36.334+0000] {logging_mixin.py:149} WARNING - Executing:  17%|#6        | 1/6 [00:02<00:13,  2.75s/cell]
+[2026-09-28T01:43:36.335+0000] {engines.py:218} INFO - Executing Cell 2---------------------------------------
+[2026-09-28T01:43:36.362+0000] {engines.py:256} INFO - Ending Cell 2------------------------------------------
+[2026-09-28T01:43:36.368+0000] {engines.py:218} INFO - Executing Cell 3---------------------------------------
+[2026-09-28T01:43:38.662+0000] {clientwrap.py:91} INFO - Ejecución: scheduled__2026-09-28T01:37:14.899558+00:00
+Entrenamiento: 12452
+Prueba: 3169
+
+[2026-09-28T01:43:38.671+0000] {engines.py:256} INFO - Ending Cell 3------------------------------------------
+[2026-09-28T01:43:38.679+0000] {logging_mixin.py:149} WARNING - Executing:  50%|#####     | 3/6 [00:05<00:04,  1.58s/cell]
+[2026-09-28T01:43:38.680+0000] {engines.py:218} INFO - Executing Cell 4---------------------------------------
+[2026-09-28T01:43:40.024+0000] {clientwrap.py:91} INFO - {
+  "accuracy": 0.9839065951404229,
+  "f1_macro": 0.9433137490253347,
+  "filas_train": 12452,
+  "filas_test": 3169,
+  "batches_recolectados": 6,
+  "clases_entrenadas": [
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "clases_test": [
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "matriz_confusion_orden_1_a_7": [
+    [
+      2727,
+      0,
+      0,
+      15,
+      4,
+      2,
+      0
+    ],
+    [
+      3,
+      108,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      11,
+      0,
+      0,
+      108,
+      0,
+      0,
+      0
+    ],
+    [
+      14,
+      0,
+      0,
+      0,
+      57,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      118,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ]
+}
+
+[2026-09-28T01:43:40.035+0000] {engines.py:256} INFO - Ending Cell 4------------------------------------------
+[2026-09-28T01:43:40.043+0000] {logging_mixin.py:149} WARNING - Executing:  67%|######6   | 4/6 [00:06<00:03,  1.51s/cell]
+[2026-09-28T01:43:40.044+0000] {engines.py:218} INFO - Executing Cell 5---------------------------------------
+[2026-09-28T01:43:40.515+0000] {clientwrap.py:91} INFO - Modelo guardado: grupo3/jupyter_8251937e76194f4e81e44c343292f37c/modelo.joblib
+
+[2026-09-28T01:43:40.520+0000] {engines.py:256} INFO - Ending Cell 5------------------------------------------
+[2026-09-28T01:43:40.530+0000] {logging_mixin.py:149} WARNING - Executing:  83%|########3 | 5/6 [00:06<00:01,  1.17s/cell]
+[2026-09-28T01:43:40.530+0000] {engines.py:218} INFO - Executing Cell 6---------------------------------------
+[2026-09-28T01:43:40.574+0000] {clientwrap.py:91} INFO - Modelo activado: jupyter_8251937e76194f4e81e44c343292f37c
+
+[2026-09-28T01:43:40.580+0000] {engines.py:256} INFO - Ending Cell 6------------------------------------------
+[2026-09-28T01:43:41.222+0000] {logging_mixin.py:149} WARNING - Executing: 100%|##########| 6/6 [00:07<00:00,  1.27s/cell]
+[2026-09-28T01:43:41.239+0000] {logging_mixin.py:149} INFO - Notebook ejecutado y guardado en: /opt/***/logs/notebooks/9ed357236a0f72362b317cad_intento_1.ipynb
+[2026-09-28T01:43:41.240+0000] {python.py:183} INFO - Done. Returned value was: None
+[2026-09-28T01:43:41.284+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=cobertura_pipeline, task_id=ejecutar_notebook, execution_date=20260928T013714, start_date=20260928T014332, end_date=20260928T014341
+[2026-09-28T01:43:41.398+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2026-09-28T01:43:41.452+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

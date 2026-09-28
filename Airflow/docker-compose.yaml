@@ -27,6 +27,12 @@ x-airflow-common:
     MINIO_SECURE: "false"
     AIRFLOW_VAR_GRUPO_PROYECTO: "3"
     AIRFLOW_VAR_API_DATOS_URL: "http://10.43.97.110:8080"
+    PYTHONPATH: /opt/airflow/plugins
+    PGHOST: postgres-datos
+    PGPORT: "5432"
+    PGDATABASE: cobertura
+    PGUSER: proyecto
+    PGPASSWORD: proyecto123
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
@@ -36,6 +42,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
 
     - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data:ro
+    - ./Jupyter:/opt/airflow/notebooks:ro
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:

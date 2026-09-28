@@ -1,0 +1,15 @@
+[2026-09-28T00:30:09.424+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cobertura_pipeline.crear_tablas_y_bucket scheduled__2026-09-28T00:23:53.326252+00:00 [queued]>
+[2026-09-28T00:30:09.456+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cobertura_pipeline.crear_tablas_y_bucket scheduled__2026-09-28T00:23:53.326252+00:00 [queued]>
+[2026-09-28T00:30:09.456+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 3
+[2026-09-28T00:30:09.505+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): crear_tablas_y_bucket> on 2026-09-28 00:23:53.326252+00:00
+[2026-09-28T00:30:09.525+0000] {standard_task_runner.py:57} INFO - Started process 90 to run task
+[2026-09-28T00:30:09.536+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'cobertura_pipeline', 'crear_tablas_y_bucket', 'scheduled__2026-09-28T00:23:53.326252+00:00', '--job-id', '1345', '--raw', '--subdir', 'DAGS_FOLDER/1_dag_flujo.py', '--cfg-path', '/tmp/tmpyna95u_l']
+[2026-09-28T00:30:09.543+0000] {standard_task_runner.py:85} INFO - Job 1345: Subtask crear_tablas_y_bucket
+[2026-09-28T00:30:09.704+0000] {task_command.py:410} INFO - Running <TaskInstance: cobertura_pipeline.crear_tablas_y_bucket scheduled__2026-09-28T00:23:53.326252+00:00 [running]> on host 210af8f745e1
+[2026-09-28T00:30:10.012+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cobertura_pipeline' AIRFLOW_CTX_TASK_ID='crear_tablas_y_bucket' AIRFLOW_CTX_EXECUTION_DATE='2026-09-28T00:23:53.326252+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-09-28T00:23:53.326252+00:00'
+[2026-09-28T00:30:10.016+0000] {crypto.py:83} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-09-28T00:30:10.018+0000] {base.py:73} INFO - Using connection ID 'postgres_cobertura' for task execution.
+[2026-09-28T00:30:10.195+0000] {python.py:183} INFO - Done. Returned value was: None
+[2026-09-28T00:30:10.226+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=cobertura_pipeline, task_id=crear_tablas_y_bucket, execution_date=20260928T002353, start_date=20260928T003009, end_date=20260928T003010
+[2026-09-28T00:30:10.350+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2026-09-28T00:30:10.395+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

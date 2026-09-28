@@ -164,81 +164,72 @@ def preprocesar(**context):
         db.close()
 
 
-def entrenar(**context):
-    run_id = context['run_id']
-    grupo = int(Variable.get('grupo_proyecto'))
-    db = conexion()
-    try:
-        with db.cursor() as c:
-            c.execute('''SELECT features, etiqueta, conjunto FROM cobertura_ready
-                         WHERE run_id=%s ORDER BY row_id''', (run_id,))
-            filas = c.fetchall()
-            c.execute('SELECT count(DISTINCT batch) FROM cobertura_ingestas WHERE grupo=%s', (grupo,))
-            batches = c.fetchone()[0]
-    finally:
-        db.close()
-    X = np.asarray([r[0] for r in filas], dtype=float)
-    y = np.asarray([r[1] for r in filas], dtype=int)
-    train = np.asarray([r[2] == 'train' for r in filas])
-    modelo = RandomForestClassifier(n_estimators=100, max_depth=20,
-                                    class_weight='balanced', random_state=42, n_jobs=2)
-    modelo.fit(X[train], y[train])
-    pred = modelo.predict(X[~train])
-    metricas = {
-        'accuracy': float(accuracy_score(y[~train], pred)),
-        'f1_macro': float(f1_score(y[~train], pred, average='macro', zero_division=0)),
-        'filas_train': int(train.sum()), 'filas_test': int((~train).sum()),
-        'batches_recolectados': int(batches),
-        'clases_entrenadas': modelo.classes_.tolist(),
-        'clases_test': np.unique(y[~train]).tolist(),
-        'matriz_confusion_orden_1_a_7': confusion_matrix(y[~train], pred, labels=list(range(1,8))).tolist(),
-    }
-    paquete = {
-        'modelo': modelo,
-        'preprocesador': leer_objeto(prefijo(run_id) + '/preprocesador.joblib'),
-        'columnas': ENTRADAS, 'metricas': metricas,
-        'run_id': run_id, 'sklearn_version': sklearn.__version__,
-    }
-    guardar_objeto(prefijo(run_id) + '/candidato.joblib', paquete)
-    LOG.info('Métricas: %s', json.dumps(metricas))
+def ejecutar_notebook(**context):
+    import hashlib
+    from pathlib import Path
 
+    import papermill as pm
 
-def publicar(**context):
-    run_id = context['run_id']
-    paquete = leer_objeto(prefijo(run_id) + '/candidato.joblib')
-    nombre = prefijo(run_id) + '/modelo.joblib'
-    checksum = guardar_objeto(nombre, paquete)
-    guardar_bytes(prefijo(run_id) + '/metricas.json',
-                  json.dumps(paquete['metricas']).encode(), 'application/json')
-    manifiesto = {'objeto': nombre, 'sha256': checksum, 'run_id': run_id,
-                  'metricas': paquete['metricas']}
-    # La API cambia de modelo solo después de subir el artefacto completo.
-    guardar_bytes('grupo3/latest.json', json.dumps(manifiesto).encode(), 'application/json')
-    db = conexion()
-    try:
-        with db:
-            with db.cursor() as c:
-                c.execute('''INSERT INTO cobertura_modelos(run_id,objeto,metricas)
-                    VALUES (%s,%s,%s) ON CONFLICT(run_id) DO UPDATE
-                    SET objeto=EXCLUDED.objeto, metricas=EXCLUDED.metricas''',
-                    (run_id, nombre, Json(paquete['metricas'])))
-    finally:
-        db.close()
-    LOG.info('Publicado en MinIO: %s', nombre)
+    run_id = context["run_id"]
+    identificador = hashlib.sha256(
+        run_id.encode()
+    ).hexdigest()[:24]
 
+    carpeta = Path("/opt/airflow/logs/notebooks")
+    carpeta.mkdir(parents=True, exist_ok=True)
+
+    salida = carpeta / (
+        f"{identificador}"
+        f"_intento_{context['ti'].try_number}.ipynb"
+    )
+
+    pm.execute_notebook(
+        input_path=(
+            "/opt/airflow/notebooks/entrenamiento.ipynb"
+        ),
+        output_path=str(salida),
+        parameters={"run_origen": run_id},
+        kernel_name="python3",
+        log_output=True,
+        cwd="/opt/airflow",
+    )
+
+    print(f"Notebook ejecutado y guardado en: {salida}")
 
 with DAG(
-    dag_id='cobertura_pipeline',
-    description='Grupo 3: API externa → PostgreSQL → modelo en MinIO',
-    start_date=pendulum.datetime(2026, 9, 1, tz='America/Bogota'),
+    dag_id="cobertura_pipeline",
+    description="Grupo 3: API → PostgreSQL → notebook → MinIO",
+    start_date=pendulum.datetime(
+        2026, 9, 1, tz="America/Bogota"
+    ),
     schedule_interval=timedelta(minutes=6),
-    catchup=False, max_active_runs=1,
-    default_args={'retries': 2, 'retry_delay': timedelta(seconds=30)},
-    tags=['cobertura', 'grupo3'],
+    catchup=False,
+    max_active_runs=1,
+    default_args={
+        "retries": 2,
+        "retry_delay": timedelta(seconds=30),
+    },
+    tags=["cobertura", "grupo3"],
 ) as dag:
-    t1 = PythonOperator(task_id='crear_tablas_y_bucket', python_callable=crear_tablas)
-    t2 = PythonOperator(task_id='recolectar_api', python_callable=recolectar, retries=0)
-    t3 = PythonOperator(task_id='preprocesar_y_guardar', python_callable=preprocesar)
-    t4 = PythonOperator(task_id='entrenar_y_evaluar', python_callable=entrenar)
-    t5 = PythonOperator(task_id='publicar_modelo_minio', python_callable=publicar)
-    t1 >> t2 >> t3 >> t4 >> t5
+    t1 = PythonOperator(
+        task_id="crear_tablas_y_bucket",
+        python_callable=crear_tablas,
+    )
+
+    t2 = PythonOperator(
+        task_id="recolectar_api",
+        python_callable=recolectar,
+        retries=0,
+    )
+
+    t3 = PythonOperator(
+        task_id="preprocesar_y_guardar",
+        python_callable=preprocesar,
+    )
+
+    t4 = PythonOperator(
+        task_id="ejecutar_notebook",
+        python_callable=ejecutar_notebook,
+    )
+
+    t1 >> t2 >> t3 >> t4
