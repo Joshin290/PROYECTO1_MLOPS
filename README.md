@@ -40,8 +40,8 @@ Su función es servir como el servicio REST para consumir de manera dinámica lo
 
 A continuación, se describen los puertos usados en este proyecto: 
 
-| Servicio | Puerto en el Host | Descripción |
-| :--- | :--- | :--- |
+| Servicio | Puerto en el Host |
+| :--- | :--- |
 | **Airflow Webserver** | `8080` | 
 | **API de Cobertura Forestal** | `8027` | 
 | **Jupyter Lab** | `8020` | 
